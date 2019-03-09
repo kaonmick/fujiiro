@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+@import "style";
+
+.breadcrumb{
+  width: 90%;
+  max-width: 900px;
+  margin: 90px auto 0 auto;
+  display: flex;
+  @include brakepoint_sp_up{
+    margin-top: 150px;
+  }
+  li{
+      margin-right: 10px;
+      font-size: 12px;
+      color: #333;
+  }
+}
+
+.subpage_title{
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  background: $fuji;
+  border-radius: 2px;
+  text-align: center;
+  @include brakepoint_sp_up{
+    margin-bottom: 40px;
+  }
+  h3{
+      color: #fff;
+      font-size: 16px;
+      padding: 6px;
+  }
+}
+.bg-color_g{
+  background: $green;
+  margin-top: 90px;
+}
+
+.ceo{
+  margin: 40px auto 0 auto;
+  width: 90%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  max-width: 900px;
+  @include brakepoint_sp_up() {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+  }
+  &_profile{
+    @include brakepoint_sp_up(){
+      width: 38%;
+    }
+    img{
+      width: 100%;
+    }
+    p{
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  &_message{
+    width: 100%;
+    background: #fafafa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    margin-top: 20px;
+    @include brakepoint_sp_up(){
+      width: 60%;
+      margin: 0;
+    }
+    p{
+      font-size: 14px;
+      line-height: 1.8rem;
+      padding: 20px;
+    }
+  }
+}
+
+#company_info{
+  .company_info{
+    margin-top: 20px;
+    tr{
+      height: 0;
+    }
+    td{
+      width: 25%;
+      padding-top: 12px;
+    }
+    td:nth-child(2){
+      text-align: right;
+      width: 75%;
+    }
+  }
+}
+
+.area_info{
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  h5{
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  p{
+    font-size: 14px;
+    margin-top: 4px;
+  }
+}
+
+.banner{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  @include brakepoint_sp_up{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .banner_inimg{
+    @include brakepoint_sp_up(){
+      flex: 0 1 auto;
+      width: 29.333%;
+      margin: 0 2%;
+    }
+    @include brakepoint_sp_down{
+      width: 48%;
+    }
+    img{
+      width: 100%;
+      margin-top: 20px;
+      display: inline-block;
+      border: solid 1px $light-gray;
+      box-sizing: border-box;
+      object-fit: contain;
+    }
+    img:nth-child(1){
+      margin-top: 40px;
+    }
+  }
+}
+.bg-color_f{
+  background: $fuji;
+  margin-top: 90px;
+}
