@@ -32,6 +32,7 @@
 
       gtag('config', 'UA-104011529-2');
     </script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body>
 
@@ -42,7 +43,7 @@
             <img src="../img/svg/fuji_logo.svg" alt="おかたづけのスペシャリスト、家財整理サービスふじいろ">
           </a>
         </div>
-      
+
         <div class="header_info-right">
           <div class="header_info-arrow">
             <img src="../img/index/head_info.png" alt="見積もり無料、電話受付8:00~21:00">
@@ -136,7 +137,7 @@
         <a itemprop="item" href="/html/index.html">ホーム</a>
         <meta itemprop="position" content="1" />
       </li>
-    
+
       <li itemprop="itemListElement" itemscope
           itemtype="http://schema.org/ListItem">
           <span itemprop="name">&gt;　お問い合わせ</span>
@@ -165,7 +166,7 @@
               data-formrun-required data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger">
           <span class="text-danger" data-formrun-show-if-error="ふりがな">ふりがなを正しく入力してください</span>
         </div>
-  
+
         <div class="form-group"
           data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="電話番号">
           <label class="form-control-label" for="email">電話番号<span class="required">必須</span></label><br>
@@ -173,7 +174,7 @@
                 data-formrun-required data-formrun-type="tel" data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger">
           <span class="text-danger" data-formrun-show-if-error="電話番号">電話番号を正しく入力してください</span>
         </div>
-      
+
         <div class="form-group"
           data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="メールアドレス">
           <label class="form-control-label" for="email">メールアドレス<span class="required">必須</span></label><br>
@@ -181,11 +182,11 @@
                 data-formrun-required data-formrun-type="email" data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger">
           <span class="text-danger" data-formrun-show-if-error="メールアドレス">メールアドレスを正 しく入力してください</span>
         </div>
-  
+
         <div class="form-group"
           data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="住所">
           <label class="form-control-label" for="email">郵便番号・住所<span class="required">必須</span></label><br>
-  
+
           <div class="form_address">
             <div>
               <input class="text_box" type="text" class="form-control" name="郵便番号" placeholder="郵便番号"
@@ -198,7 +199,7 @@
           </div>
           <span class="text-danger" data-formrun-show-if-error="住所">住所を正しく入力してください</span>
         </div>
-  
+
         <fieldset class="form-group">
           <span class="label">弊社からのご連絡方法</span>
           <div class="select_contact">
@@ -216,7 +217,7 @@
             </label>
           </div>
         </fieldset>
-      
+
         <div class="form-group"
           data-formrun-class-if-success="has-success" data-formrun-class-if-error="has-danger" data-formrun-target="お問い合わせ">
           <label class="form-control-label" for="body">お問い合わせ内容<span class="required">必須</span></label><br>
@@ -224,7 +225,9 @@
                     data-formrun-required data-formrun-class-if-success="form-control-success" data-formrun-class-if-error="form-control-danger"></textarea>
           <span class="text-danger" data-formrun-show-if-error="お問い合わせ内容">お問い合わせ内容を入力してください</span>
         </div>
-  
+
+        <div class="g-recaptcha" data-sitekey="your google recapcha site key"></div>
+
         <button class="btn" type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
       </form>
     </section>
